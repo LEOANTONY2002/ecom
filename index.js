@@ -34,9 +34,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() =>
-    app.listen(process.env.PORT || 5000, () => console.log("Success...."))
-  )
+  .then(() => app.listen(process.env.PORT, () => console.log("Success....")))
   .catch((err) => console.log(err.message));
 
 mongoose.set("useFindAndModify", false);
