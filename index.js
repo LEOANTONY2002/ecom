@@ -27,12 +27,12 @@ app.use("/order", orderRouter);
 
 app.use("/uploads", express.static(path.join(__dirname, "./uploads")));
 app.get("/", (req, res) => {
-  res.sendFile("./ecom/build/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "ecom", "build", "index.html"));
 });
 
 if (process.env.NODE_ENV === "production") {
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "ecom", "build", "index.html"));
+    res.sendFile(path.join(__dirname, "ecom", "build", "index.html"));
   });
 }
 var port = process.env.PORT || 80;
