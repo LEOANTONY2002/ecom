@@ -30,6 +30,11 @@ app.get("/", (req, res) => {
   res.sendFile("./ecom/build/index.html", { root: __dirname });
 });
 
+if (process.env.NODE_ENV === "production") {
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "ecom", "build", "index.html"));
+  });
+}
 var port = process.env.PORT || 80;
 var host = process.env.HOST || "0.0.0.0";
 mongoose
