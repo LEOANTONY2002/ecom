@@ -38,7 +38,7 @@ router.post("/login", async (req, res) => {
   const pwVerify = await bcrypt.compare(req.body.password, user.password);
   if (!pwVerify) return res.status(401).send("Invalid Login Credentials");
 
-  const token = jwt.sign({ _id: user._id }, process.env.SECRET_TOKEN);
+  // const token = jwt.sign({ _id: user._id }, process.env.SECRET_TOKEN);
   // res.header("auth-token", token).send(token);
   res.send({
     name: user.name,
