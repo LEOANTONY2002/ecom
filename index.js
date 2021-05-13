@@ -26,8 +26,8 @@ app.use("/upload", uploadRouter);
 app.use("/order", orderRouter);
 
 app.use("/uploads", express.static(path.join(__dirname, "./uploads")));
-app.get("*", (req, res) => {
-  res.sendFile("./ecom/build", "index.html");
+app.get("/", (req, res) => {
+  res.sendFile("./ecom/build/index.html", { root: __dirname });
 });
 mongoose
   .connect(process.env.MONGODB, {
