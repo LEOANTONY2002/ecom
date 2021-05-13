@@ -29,12 +29,15 @@ app.use("/uploads", express.static(path.join(__dirname, "./uploads")));
 app.get("/", (req, res) => {
   res.sendFile("./ecom/build/index.html", { root: __dirname });
 });
+
+var port = process.env.PORT || 80;
+var host = process.env.HOST || "0.0.0.0";
 mongoose
   .connect(process.env.MONGODB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => app.listen(process.env.PORT, () => console.log("Success....")))
+  .then(() => app.listen(port, host, () => console.log("Success....")))
   .catch((err) => console.log(err.message));
 
 mongoose.set("useFindAndModify", false);
