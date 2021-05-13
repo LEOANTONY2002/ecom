@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd ecom && npm install && npm run build"
+    "heroku-postbuild": "cd ecom && npm install ",
+    "build": "cd ecom && react-scripts build"
   },
   "license": "MIT",
   "dependencies": {
