@@ -1,7 +1,5 @@
 import express from "express";
 import multer from "multer";
-import cloudinary from "cloudinary";
-import { CloudinaryStorage } from "multer-storage-cloudinary";
 import path from "path";
 
 const router = express.Router();
