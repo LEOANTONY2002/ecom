@@ -1,0 +1,231 @@
+.products {
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 70px;
+  max-height: 100%;
+  background-color: #111;
+  position: relative;
+  z-index: 0;
+}
+
+.your {
+  background: linear-gradient(90deg, black, black, rgb(0, 153, 255));
+}
+.your > p {
+  font-size: 29px;
+  font-weight: 700;
+  padding: 20px;
+  background-color: black;
+  width: max-content;
+  color: whitesmoke;
+}
+
+.p-head {
+  width: 60vw;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 153, 255);
+  cursor: pointer;
+}
+.p-head > img {
+  width: 50px;
+  margin-right: 20px;
+}
+.p-head > p {
+  font-size: large;
+}
+.p-body {
+  padding: 20px 10vw;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.p-reg {
+  background: linear-gradient(black, #111) !important;
+  margin-top: -20px;
+}
+.p-reg > div {
+  margin: 5px;
+}
+.p-wrap {
+  filter: drop-shadow(-1px 0px 7px rgb(153, 0, 255));
+}
+.prod {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  background: linear-gradient(#111, black);
+  clip-path: polygon(9% 0, 100% 0, 100% 89%, 91% 100%, 0 100%, 0 9%);
+  margin: 20px;
+}
+
+.prod > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.p-desc {
+  color: rgb(0, 119, 255);
+  font-size: 17px;
+  font-weight: 550;
+}
+.p-desc > p {
+  padding: 5px 15px;
+}
+.name {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(162, 0, 255);
+  text-align: center;
+}
+.p-desc > p :first-of-type {
+  font-weight: bold;
+  color: rgb(211, 43, 226);
+}
+
+.price {
+  width: 100%;
+  color: rgb(243, 250, 244);
+  font-weight: 650;
+  background: linear-gradient(90deg, blueviolet, black, black);
+  padding: 5px;
+}
+
+.overlay {
+  position: absolute;
+  color: rgb(0, 162, 255);
+  font-size: large;
+  font-weight: 600;
+  width: max-content;
+  height: 100%;
+  background: linear-gradient(90deg, black, #111);
+  transform: translateX(-200px);
+  transition: all 0.25s ease-in-out;
+}
+.prod:hover .overlay {
+  transform: translateX(0);
+}
+.overlay > div {
+  padding: 0 20px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.overlay > div:first-of-type {
+  height: 45%;
+}
+.overlay > div:hover {
+  background-color: rgb(44, 45, 46);
+}
+.overlay div > img {
+  width: 50px;
+}
+
+.model {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  z-index: 10;
+  display: grid;
+  place-content: center;
+  backdrop-filter: blur(7px);
+}
+.model > div {
+  padding: 0 10vw;
+  width: max-content;
+  height: 95vh;
+}
+.model > div > h2 {
+  color: rgb(0, 140, 255);
+  margin-top: 10px;
+}
+
+.cancelIc {
+  width: 45px;
+  position: absolute;
+  top: 3vh;
+  right: 11vw;
+  cursor: pointer;
+}
+
+.imgField > div {
+  color: rgb(0, 140, 255);
+}
+.imgField > p {
+  position: absolute;
+  left: 20vw;
+  margin-top: 10px;
+}
+.imgField > div > img {
+  width: 40px;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1.5px rgb(0, 140, 255);
+  margin: 10px;
+  position: fixed;
+  z-index: -1;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+.imgField > div > input {
+  width: 70px;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  opacity: 0;
+}
+
+.up {
+  width: max-content;
+  position: absolute;
+  transform: translate(70px);
+  padding: 3px;
+  background-color: black;
+  box-shadow: 0 0 4px 1px rgb(0, 119, 255);
+  margin-top: -20px;
+  font-size: 11px;
+}
+
+@media (max-width: 700px) {
+  .up {
+    transform: translate(60px, -60px);
+    position: unset;
+    max-width: 50vw;
+    word-wrap: break-word;
+  }
+  .imgField {
+    position: unset;
+    margin-top: -7px !important;
+  }
+  .imgField > div {
+    margin-top: -10px;
+    margin-bottom: -45px;
+  }
+  .imgField > p {
+    position: unset;
+    margin-left: -15px;
+  }
+  .imgField > div > img {
+    position: unset;
+    margin: 20px 0;
+    margin-left: -10px;
+  }
+  .imgField > div > input {
+    height: 50px;
+    transform: translate(-70px, -50px);
+  }
+}

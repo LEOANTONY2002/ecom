@@ -1,0 +1,122 @@
+.payment {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  margin-top: 70px;
+}
+
+.ad-head {
+  display: flex;
+  width: 100vw;
+}
+.ad-head > p {
+  border-bottom: 4px solid rgb(0, 119, 255);
+}
+.ad-head > p:first-of-type {
+  width: 10vw;
+  margin: 0;
+}
+.ad-head > p:last-of-type {
+  width: 40vw;
+}
+.ad-head > h2 {
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 5px 1px rgb(36, 35, 35);
+  margin-top: 20px;
+  margin-bottom: -22px;
+  color: rgb(4, 128, 243);
+}
+.ad-body {
+  padding: 35px 50px;
+}
+.ad-body > p {
+  margin: 5px 0;
+  color: whitesmoke;
+}
+.ad-body > p:first-of-type {
+  color: rgb(0, 132, 255);
+  font-weight: bold;
+}
+
+.b-flex {
+  display: flex;
+}
+.pr-body {
+  width: 100vw;
+  margin: 30px 0;
+  display: flex;
+  overflow-x: auto;
+}
+.pr-body::-webkit-scrollbar {
+  display: none;
+}
+.cp-wrap2 {
+  width: max-content;
+  flex: 0 0 auto;
+}
+
+.pay-body {
+  width: 80vw;
+  margin: 20vh auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+.pay-field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 12px;
+  border-radius: 70px;
+  cursor: pointer;
+}
+.pay-field:hover {
+  background-color: black;
+  box-shadow: 0 0 10px 3px blueviolet;
+}
+.pay-field > img {
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: 0 0 9px 3px rgb(183, 0, 255);
+}
+.pay-field > p {
+  transition: all 0.3s ease-in-out;
+  width: 200px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 5px 15px;
+  margin-top: -19px;
+  border-bottom: 4px solid rgb(183, 0, 255);
+}
+
+.pay > p {
+  display: flex;
+  font-size: 30px;
+  padding: 30px;
+  font-weight: 700;
+}
+.pay > p:last-of-type {
+  background: linear-gradient(-90deg, blueviolet, black);
+}
+
+@media (max-width: 500px) {
+  .ad-head > h2 {
+    font-size: 13px;
+    margin-bottom: -16.5px;
+  }
+  .pay-field > p {
+    width: 120px;
+  }
+  .pay-field > img {
+    z-index: 20;
+  }
+}

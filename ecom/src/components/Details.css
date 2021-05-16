@@ -1,0 +1,153 @@
+html {
+  display: block;
+}
+.details {
+  width: 100vw;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.details > img {
+  width: 40vw;
+  height: 70vh;
+  margin: 30px;
+  margin-top: 60px;
+  background-color: white;
+  border-radius: 30px;
+  object-fit: contain;
+  background-color: #111;
+  box-shadow: 0 0 8px 2px black;
+}
+
+.d-dets {
+  width: 40vw;
+  display: grid;
+  place-content: center;
+  padding: 50px;
+}
+
+.d-name {
+  font-size: 30px;
+  font-weight: 700;
+}
+.d-desc {
+  margin-bottom: 30px;
+}
+.d-cat > span {
+  color: blueviolet;
+}
+.d-price {
+  font-size: 37px;
+  font-weight: 650;
+  color: rgb(12, 12, 12);
+  margin: 30px 0;
+  position: fixed;
+  right: -170px;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  transform: rotate(-90deg);
+  border-radius: 50%;
+  background-color: rgb(255, 0, 212);
+  box-shadow: 0 0 8px 2px black;
+}
+
+.d-qty {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-qty > p {
+  margin-right: 20px;
+  font-size: large;
+  color: blueviolet;
+}
+.d-qty > select {
+  width: 170px;
+  height: 40px;
+  border: 2px solid rgb(0, 140, 255);
+  border-radius: 50px;
+  background: transparent;
+  color: rgb(0, 140, 255);
+  text-indent: 50%;
+  font-weight: 600;
+  font-size: large;
+  cursor: pointer;
+}
+.d-qty > select:focus {
+  outline: none;
+}
+.d-qty > select > option {
+  background: linear-gradient(#111, black);
+}
+
+.choice {
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  display: grid;
+  place-content: center;
+}
+.choice > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  border-radius: 10px;
+  max-width: 80vw;
+}
+.choice > div > p {
+  padding: 20px;
+  font-size: 29px;
+  color: rgb(129, 9, 241);
+  font-weight: bold;
+  text-align: center;
+}
+
+.ch-btns {
+  width: 100%;
+  display: flex;
+}
+
+.cb-con {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cb-con > img {
+  width: 37px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: 0 0 5px 1px rgb(66, 65, 65);
+  margin-right: 15px;
+}
+.cb-con > p {
+  color: whitesmoke;
+  font-size: small;
+  margin: 7px 0;
+}
+@media (max-width: 900px) {
+  .details > img {
+    width: 80vw;
+  }
+  .d-dets {
+    width: 90vw;
+  }
+  .choice > div > p {
+    font-size: 18px;
+  }
+}

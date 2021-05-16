@@ -1,0 +1,40 @@
+.drop {
+  width: 60vw;
+  height: 40px;
+  border: none;
+  border-bottom: 5px solid rgb(11, 172, 236);
+  text-indent: 15px;
+  background: linear-gradient(transparent, rgba(47, 49, 49, 0.521));
+  font-size: large;
+  color: rgb(43, 182, 236);
+  outline: none;
+}
+
+.drop:focus {
+  outline: none;
+}
+
+.shipping {
+  display: flex;
+  width: 100vw;
+}
+
+.sh-ad {
+  height: 100%;
+  width: 20vw;
+  font-size: 32px;
+  font-weight: bolder;
+  color: rgb(0, 110, 255);
+  display: grid;
+  place-content: center;
+}
+.sh-ad > p {
+  transform: rotate(-90deg);
+  margin: 0;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.ship {
+  height: 100%;
+}
