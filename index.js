@@ -26,15 +26,18 @@ app.use("/upload", uploadRouter);
 app.use("/order", orderRouter);
 
 app.use("/uploads", express.static(path.join(__dirname, "./uploads")));
+app.use(express.static(path.join(__dirname, "ecom", "build")));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "ecom", "build", "index.html"));
 });
 
 if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "ecom", "build")));
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "ecom", "build", "index.html"));
   });
 }
+
 var port = process.env.PORT || 80;
 var host = process.env.HOST || "0.0.0.0";
 mongoose
