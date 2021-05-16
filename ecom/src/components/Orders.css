@@ -1,0 +1,68 @@
+.orders {
+  width: 100vw;
+}
+
+.order {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 30px !important;
+}
+
+.o-head {
+  display: flex;
+  align-items: flex-end;
+}
+.o-head > p {
+  color: whitesmoke;
+  margin-right: 20px;
+}
+.o-head > span {
+  color: rgb(0, 102, 255);
+  font-size: x-large;
+  font-weight: 550;
+  margin-bottom: -3px;
+}
+
+.o-product {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.o-product > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+.op-desc {
+  color: whitesmoke;
+}
+.op-desc > span {
+  display: flex;
+  align-items: flex-end;
+}
+.op-desc > span > p {
+  font-size: x-large;
+  margin: 0 0 -3px 15px;
+  color: white;
+  font-weight: bold;
+}
+.o-foot {
+  width: 80vw;
+  display: flex;
+  justify-content: flex-end;
+}
+.o-foot > p {
+  text-align: right;
+  color: whitesmoke;
+  margin-right: 15px;
+}
+.o-foot > span {
+  color: rgb(234, 0, 255);
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .o-head > span {
+    font-size: medium;
+  }
+}

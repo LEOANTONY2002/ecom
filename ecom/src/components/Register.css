@@ -1,0 +1,106 @@
+.register {
+  width: 100vw;
+  margin-top: 160px;
+}
+.reg {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reg > div {
+  margin: 10px 0;
+}
+
+.reg > div > p {
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+input {
+  width: 60vw;
+  height: 40px;
+  border: none;
+  border-bottom: 5px solid rgb(11, 172, 236);
+  text-indent: 15px;
+  background: linear-gradient(transparent, rgba(47, 49, 49, 0.521));
+  font-size: large;
+  color: rgb(43, 182, 236);
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+  width: 130px;
+  height: 50px !important;
+  color: rgb(13, 161, 247);
+  border-radius: 40px;
+  background: transparent;
+  background-color: #111;
+  border: none;
+  font-weight: 650;
+  margin: 20px 0;
+  box-shadow: 0 0 5px 1px rgba(8, 160, 248, 0.842);
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(13, 142, 247);
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.06);
+}
+
+.reg > p {
+  font-weight: bold;
+  color: rgb(148, 197, 236);
+}
+
+a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: white;
+}
+
+.fail {
+  width: 60vw;
+  margin: 10px;
+  color: red !important;
+  font-weight: normal !important;
+}
+
+.greet {
+  text-align: center;
+  margin-bottom: 30px !important;
+  font-weight: 600 !important;
+  color: rgb(0, 119, 255);
+}
+.greet > span:first-of-type {
+  font-size: 27px !important;
+  color: rgb(140, 0, 255);
+  font-weight: 800;
+}
+.greet > span:last-of-type {
+  font-size: larger;
+  color: rgb(247, 0, 255);
+  font-weight: 800;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border-radius: 60px;
+  padding: 10px;
+  box-shadow: 0 0 8px 2px rgb(245, 6, 245);
+  cursor: pointer;
+}
+.logout > img {
+  width: 40px;
+  margin-right: 15px;
+}
+.logout > p {
+  margin-right: 15px;
+  font-weight: 600;
+}
