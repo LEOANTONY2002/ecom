@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "heroku-postbuild": "cd ecom && npm install ",
     "build": "cd ecom && react-scripts build"
   },
