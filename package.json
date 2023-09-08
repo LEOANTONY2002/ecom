@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "heroku-postbuild": "cd ecom && npm install ",
-    "build": "cd ecom && npm install && react-scripts build"
+    "build": "cd ecom && npm install --legacy-peer-deps && react-scripts build"
   },
   "license": "MIT",
   "dependencies": {
